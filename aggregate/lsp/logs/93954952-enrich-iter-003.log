@@ -1,0 +1,53 @@
+[2026-09-14T18:06:36Z] === ENRICH ITERATION 3 START | repo=BurntSushi/jiff sha=93954952 ===
+[2026-09-14T18:06:36Z] [iter=3] PHASE START: enrich repo=BurntSushi/jiff sha=93954952 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/93954952-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/939549520e6004b051b02c8b5f74973b833f3670.nq.gz
+[2026-09-14T18:06:49Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-14T18:07:17Z] [iter=3] AST store loaded triples=3336235 load_secs=27 mem_mb=993 MB
+[2026-09-14T18:07:17Z] [iter=3] Step 2: Finding LSP targets mem_mb=993 MB
+[2026-09-14T18:07:26Z] [iter=3] LSP targets found call_sites=24401 imports=176 extends=0 implements=164 secs=9
+[2026-09-14T18:07:33Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=993 MB
+[2026-09-14T18:07:54Z] [iter=3] Position index built positions=230336 nodes_with_types=267935 secs=21 mem_mb=993 MB
+[2026-09-14T18:07:54Z] [iter=3] Step 3: Starting LSP resolution mem_mb=993 MB already_completed_types=[] already_completed_files=0
+[2026-09-14T18:07:54Z] [iter=3] Resolving target type target_type=call_site count=24401
+[2026-09-14T18:08:12Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=0 resolved=0 errors=0 current=tests/tc39_262/span/total.rs
+[2026-09-14T18:09:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=1 resolved=52 errors=24 current=bench/src/convert.rs
+[2026-09-14T18:09:50Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=3.2 files_done=3 resolved=89 errors=48 current=crates/jiff-static/src/shared/posix.rs
+[2026-09-14T18:19:35Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=4 resolved=615 errors=476 current=src/fmt/strtime/parse.rs
+[2026-09-14T18:27:37Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=21.0 files_done=5 resolved=1053 errors=828 current=tests/tc39_262/civil/time/round.rs
+[2026-09-14T18:38:02Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=31.4 files_done=6 resolved=1206 errors=1286 current=tests/tc39_262/civil/time/sub.rs
+[2026-09-14T18:41:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=35.3 files_done=7 resolved=1264 errors=1454 current=src/fmt/offset.rs
+[2026-09-14T18:44:07Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=37.5 files_done=8 resolved=1376 errors=1550 current=crates/jiff-cli/cmd/generate/tzdb.rs
+[2026-09-14T18:45:17Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=38.7 files_done=9 resolved=1432 errors=1601 current=tests/tc39_262/civil/datetime/round.rs
+[2026-09-14T18:50:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=43.7 files_done=10 resolved=1485 errors=1820 current=src/civil/datetime.rs
+[2026-09-14T18:59:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=52.8 files_done=11 resolved=1545 errors=2222 current=src/civil/date.rs
+[2026-09-14T19:14:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=67.5 files_done=12 resolved=1653 errors=2868 current=bench/src/timestamp.rs
+[2026-09-14T19:19:07Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=72.5 files_done=14 resolved=2110 errors=3087 current=src/span.rs
+[2026-09-14T19:45:06Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=98.5 files_done=15 resolved=2435 errors=4221 current=src/shared/posix.rs
+[2026-09-14T19:54:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=108.3 files_done=16 resolved=2961 errors=4652 current=src/util/round/mode.rs
+[2026-09-14T19:57:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=110.6 files_done=17 resolved=3021 errors=4753 current=src/tz/zic.rs
+[2026-09-14T20:06:46Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=120.2 files_done=18 resolved=3499 errors=5170 current=src/tz/tzif.rs
+[2026-09-14T20:08:50Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=122.2 files_done=19 resolved=3609 errors=5260 current=src/fmt/temporal/printer.rs
+[2026-09-14T20:14:53Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=128.3 files_done=20 resolved=3729 errors=5524 current=crates/jiff-sqlx/src/postgres.rs
+[2026-09-14T20:16:57Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=130.3 files_done=22 resolved=3752 errors=5614 current=src/fmt/rfc9557.rs
+[2026-09-14T20:19:05Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=132.5 files_done=23 resolved=3859 errors=5708 current=src/tz/offset.rs
+[2026-09-14T20:22:55Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=136.3 files_done=24 resolved=3903 errors=5876 current=src/signed_duration.rs
+[2026-09-14T20:27:43Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=141.1 files_done=25 resolved=4015 errors=6085 current=src/fmt/rfc2822.rs
+[2026-09-14T20:35:43Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=149.1 files_done=26 resolved=4190 errors=6434 current=tests/tc39_262/span/round.rs
+[2026-09-14T20:51:29Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=164.9 files_done=27 resolved=4252 errors=7123 current=tests/tc39_262/span/add.rs
+[2026-09-14T20:52:27Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=165.8 files_done=28 resolved=4265 errors=7165 current=src/fmt/friendly/printer.rs
+[2026-09-14T21:00:58Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=174.4 files_done=29 resolved=4924 errors=7539 current=crates/jiff-static/src/shared/tzif.rs
+[2026-09-14T21:05:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=178.8 files_done=30 resolved=5040 errors=7733 current=src/shared/tzif.rs
+[2026-09-14T21:09:57Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=183.3 files_done=31 resolved=5156 errors=7930 current=src/fmt/temporal/parser.rs
+[2026-09-14T21:17:58Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=191.4 files_done=32 resolved=5458 errors=8278 current=bench/src/date.rs
+[2026-09-14T21:25:48Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=199.2 files_done=34 resolved=5631 errors=8618 current=src/tz/timezone.rs
+[2026-09-14T21:36:51Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=210.2 files_done=35 resolved=5828 errors=9098 current=tests/tc39_262/civil/date/add.rs
+[2026-09-14T21:39:10Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=212.6 files_done=38 resolved=5967 errors=9199 current=src/fmt/strtime/mod.rs
+[2026-09-14T21:43:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=217.0 files_done=39 resolved=6123 errors=9393 current=crates/jiff-diesel/src/mysql.rs
+[2026-09-14T21:50:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=224.3 files_done=41 resolved=6209 errors=9710 current=src/tz/concatenated.rs
+[2026-09-14T21:57:37Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=231.0 files_done=42 resolved=6269 errors=10000 current=crates/jiff-static/src/lib.rs
+[2026-09-14T21:59:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=232.8 files_done=43 resolved=6330 errors=10076 current=src/shared/crc32/mod.rs
+[2026-09-14T22:02:48Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=236.2 files_done=45 resolved=6339 errors=10222 current=src/tz/db/mod.rs
+[2026-09-14T22:04:20Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=237.7 files_done=46 resolved=6371 errors=10288 current=crates/jiff-cli/cmd/generate/crc32.rs
+[2026-09-14T22:06:38Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=49 new_files_this_iter=49 mem_mb=993 MB
+[2026-09-14T22:06:38Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/939549520e6004b051b02c8b5f74973b833f3670.nq.gz triples=91321
+[2026-09-14T22:06:39Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-09-14T22:06:39Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=14401 elapsed_min=240.0 files_completed=49
