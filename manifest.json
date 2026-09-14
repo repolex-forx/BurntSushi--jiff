@@ -258,10 +258,10 @@
         "blob/110aecb780ce8b19c6fa0886182c523eae9d7537.nq.gz"
       ],
       "ast": [
-        "aggregate/ast/939549520e6004b051b02c8b5f74973b833f3670"
+        "aggregate/ast/939549520e6004b051b02c8b5f74973b833f3670/chunk-001.nq.gz"
       ],
       "lsp": "aggregate/lsp/939549520e6004b051b02c8b5f74973b833f3670.nq.gz",
-      "repolex": "aggregate/repolex/939549520e6004b051b02c8b5f74973b833f3670",
+      "repolex": "aggregate/repolex/939549520e6004b051b02c8b5f74973b833f3670/chunk-001.nq.gz",
       "dep": "dep/939549520e6004b051b02c8b5f74973b833f3670.nq.gz"
     }
   ],
